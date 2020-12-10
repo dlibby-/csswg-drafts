@@ -1244,6 +1244,37 @@ Inline-Axis Overflow: the '@media/overflow-inline' feature</h3>
 	and the very concept doesn't seem to make much sense,
 	so there is intentionally no ''paged'' value for '@media/overflow-inline'.
 
+<h3 id='mf-horizontal-viewport-segments'>
+Horizontal Viewport Segments: the '@media/horizontal-viewport-segments' feature</h3>
+
+	<pre class="descdef mq">
+	Name: horizontal-viewport-segments
+	Value: <<integer>>
+	For: @media
+	Type: range
+	</pre>
+
+	A viewport segment is  The '@media/horizontal-viewport-segments' media feature describes the number of logical segments of
+    the viewport. Segments of the viewport are created when the viewport spans hardware features (such
+    as a fold or separate displays). This is informed by the operating system's window manager 
+
+
+	<dl dfn-type=value dfn-for="@media/overflow-inline">
+		<dt><dfn>none</dfn>
+		<dd>
+			There is no affordance for overflow in the <a status=TR>inline axis</a>;
+			any overflowing content is simply not displayed.
+
+		<dt><dfn>scroll</dfn>
+		<dd>
+			Overflowing content in the <a status=TR>inline axis</a> is exposed by allowing users to scroll to it.
+	</dl>
+
+	Note: There are no known implementations of paged overflow of inline-overflowing content,
+	and the very concept doesn't seem to make much sense,
+	so there is intentionally no ''paged'' value for '@media/overflow-inline'.
+
+
 <!--
 ████████  ████  ██████  ████████         ███████  ██     ██    ███    ██       ████ ████████ ██    ██
 ██     ██  ██  ██    ██ ██     ██       ██     ██ ██     ██   ██ ██   ██        ██     ██     ██  ██
